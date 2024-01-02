@@ -128,8 +128,15 @@
 .header__notify-item {
   display: flex;
 }
+.header__notify-item:hover {
+  background-color: #f7f7f7;
+}
+.header__notify-item--viewed {
+  background-color: rgba(238, 77, 45, 0.08);
+}
 .header__notify-link {
   display: flex;
+  width: 100%;
   padding: 12px;
   text-decoration: none;
 }
@@ -151,4 +158,12 @@
   font-size: 1.2rem;
   line-height: 1.6em;
   color: #756f6e;
+}
+.header__notify-footer {
+  text-align: center;
+}
+.header__notify-footer-btn {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 16px 16px;
 }
