@@ -2,7 +2,7 @@
   --primary-color: #ee4d2d;
   --white-color: #fff;
   --black-color: #000;
-  --text-color: #333;
+  --text-color: #333; 
 }
 * {
   box-sizing: inherit;

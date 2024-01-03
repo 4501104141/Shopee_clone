@@ -19,6 +19,9 @@
 .header__navbar-item--has--qr:hover .header__qr {
   display: block;
 }
+.header__navbar-item--has-notify:hover .header__notify {
+  display: block;
+}
 .header__navbar-item,
 .header__navbar-item-link {
   display: inline-block;
@@ -110,6 +113,19 @@
   width: 404px;
   border: 1px solid #d3d3d3;
   background-color: var(--white-color);
+  transform-origin: calc(100% - 20px) top;
+  animation: headerNotifyGrowth ease-in .2s;
+  display: none;
+}
+@keyframes headerNotifyGrowth {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .header__notify-header {
   height: 40px;
@@ -150,20 +166,26 @@
 .header__notify-name {
   display: block;
   font-size: 1.4rem;
-  color: var(--black-color);
+  color: var(--text-color);
   font-weight: 400;
+  line-height: 1.8rem;
 }
 .header__notify-description {
   display: block;
   font-size: 1.2rem;
   line-height: 1.6em;
   color: #756f6e;
+  margin-top: 4px;
 }
 .header__notify-footer {
-  text-align: center;
+  display: flex;
 }
 .header__notify-footer-btn {
   text-decoration: none;
   color: var(--text-color);
-  padding: 16px 16px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
 }
